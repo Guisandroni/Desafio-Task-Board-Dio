@@ -1,17 +1,31 @@
 package org.dev.gui.persistence.dao;
 
 
-import lombok.RequiredArgsConstructor;
+import com.mysql.cj.jdbc.StatementImpl;
+import lombok.AllArgsConstructor;
+import org.dev.gui.dto.BoardColumnDTO;
+import org.dev.gui.persistence.entity.BoardColumnEntity;
+import org.dev.gui.persistence.entity.CardEntity;
 
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
-@RequiredArgsConstructor
+import static java.util.Objects.isNull;
+import static org.dev.gui.persistence.entity.BoardColumnKindEnum.findByName;
+
+@AllArgsConstructor
 public class BoardColumnDAO {
+
+
+
 
     private final Connection connection;
 
     public BoardColumnEntity insert(final BoardColumnEntity entity) throws SQLException {
-        var sql = "INSERT INTO BOARDS_COLUMNS (name, `order`, kind, board_id) VALUES (?, ?, ?, ?);";
+        var sql = "INSERT INTO boards_Columns (name, `order`, kind, board_id) VALUES (?, ?, ?, ?);";
         try(var statement = connection.prepareStatement(sql)){
             var i = 1;
             statement.setString(i ++, entity.getName());
@@ -28,7 +42,7 @@ public class BoardColumnDAO {
 
     public List<BoardColumnEntity> findByBoardId(final Long boardId) throws SQLException{
         List<BoardColumnEntity> entities = new ArrayList<>();
-        var sql = "SELECT id, name, `order`, kind FROM BOARDS_COLUMNS WHERE board_id = ? ORDER BY `order`";
+        var sql = "SELECT id, name, `order`, kind FROM boards_Columns WHERE board_id = ? ORDER BY `order`";
         try(var statement = connection.prepareStatement(sql)){
             statement.setLong(1, boardId);
             statement.executeQuery();
@@ -53,9 +67,9 @@ public class BoardColumnDAO {
                        bc.name,
                        bc.kind,
                        (SELECT COUNT(c.id)
-                               FROM CARDS c
+                               FROM cards c
                               WHERE c.board_column_id = bc.id) cards_amount
-                  FROM BOARDS_COLUMNS bc
+                  FROM boards_Columns bc
                  WHERE board_id = ?
                  ORDER BY `order`;
                 """;
@@ -84,8 +98,8 @@ public class BoardColumnDAO {
                        c.id,
                        c.title,
                        c.description
-                  FROM BOARDS_COLUMNS bc
-                  LEFT JOIN CARDS c
+                  FROM boards_Columns bc
+                  LEFT JOIN cards c
                     ON c.board_column_id = bc.id
                  WHERE bc.id = ?;
                 """;
@@ -113,3 +127,4 @@ public class BoardColumnDAO {
         }
     }
 }
+

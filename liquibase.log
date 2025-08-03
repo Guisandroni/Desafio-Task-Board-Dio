@@ -1,69 +1,37 @@
-Jul 31, 2025 4:28:44 PM liquibase.changelog
+Aug 03, 2025 2:05:47 PM liquibase.changelog
 INFO: Reading resource: db.migrations/migrations/db.migrations-31071300.sql
-Jul 31, 2025 4:28:44 PM liquibase.snapshot
-INFO: Creating snapshot
-Jul 31, 2025 4:28:44 PM liquibase.changelog
-INFO: Creating database changelog table with name: board.DATABASECHANGELOG
-Jul 31, 2025 4:28:44 PM liquibase.changelog
-INFO: Reading resource: db.migrations/migrations/db.migrations-31071640.sql
-Jul 31, 2025 4:28:44 PM liquibase.changelog
-INFO: Reading resource: db.migrations/migrations/db.migrations-31071650.sql
-Jul 31, 2025 4:28:44 PM liquibase.changelog
-INFO: Reading resource: db.migrations/migrations/db.migrations-32071640.sql
-Jul 31, 2025 4:28:45 PM liquibase.snapshot
-INFO: Creating snapshot
-Jul 31, 2025 4:28:45 PM liquibase.lockservice
-INFO: Successfully acquired change log lock
-Jul 31, 2025 4:28:45 PM liquibase.command
-INFO: Using deploymentId: 3990123512
-Jul 31, 2025 4:28:45 PM liquibase.changelog
+Aug 03, 2025 2:05:48 PM liquibase.changelog
 INFO: Reading from board.DATABASECHANGELOG
-Running Changeset: db.migrations/migrations/db.migrations-31071300.sql::raw::includeAll
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: Custom SQL executed
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: ChangeSet db.migrations/migrations/db.migrations-31071300.sql::raw::includeAll ran successfully in 90ms
-Running Changeset: db.migrations/migrations/db.migrations-31071640.sql::raw::includeAll
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: Custom SQL executed
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: ChangeSet db.migrations/migrations/db.migrations-31071640.sql::raw::includeAll ran successfully in 105ms
-Running Changeset: db.migrations/migrations/db.migrations-31071650.sql::raw::includeAll
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: Custom SQL executed
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: ChangeSet db.migrations/migrations/db.migrations-31071650.sql::raw::includeAll ran successfully in 101ms
-Running Changeset: db.migrations/migrations/db.migrations-32071640.sql::raw::includeAll
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: Custom SQL executed
-Jul 31, 2025 4:28:45 PM liquibase.changelog
-INFO: ChangeSet db.migrations/migrations/db.migrations-32071640.sql::raw::includeAll ran successfully in 113ms
+Aug 03, 2025 2:05:48 PM liquibase.changelog
+INFO: Reading resource: db.migrations/migrations/db.migrations-31071640.sql
+Aug 03, 2025 2:05:48 PM liquibase.changelog
+INFO: Reading resource: db.migrations/migrations/db.migrations-31071650.sql
+Aug 03, 2025 2:05:48 PM liquibase.changelog
+INFO: Reading resource: db.migrations/migrations/db.migrations-32071640.sql
+Database is up to date, no changesets to execute
+Aug 03, 2025 2:05:48 PM liquibase.changelog
+INFO: Reading from board.DATABASECHANGELOG
 
 UPDATE SUMMARY
-Run:                          4
-Previously run:               0
+Run:                          0
+Previously run:               4
 Filtered out:                 0
 -------------------------------
 Total change sets:            4
 
-Jul 31, 2025 4:28:45 PM liquibase.util
+Aug 03, 2025 2:05:48 PM liquibase.util
 INFO: UPDATE SUMMARY
-Jul 31, 2025 4:28:45 PM liquibase.util
-INFO: Run:                          4
-Jul 31, 2025 4:28:45 PM liquibase.util
-INFO: Previously run:               0
-Jul 31, 2025 4:28:45 PM liquibase.util
+Aug 03, 2025 2:05:48 PM liquibase.util
+INFO: Run:                          0
+Aug 03, 2025 2:05:48 PM liquibase.util
+INFO: Previously run:               4
+Aug 03, 2025 2:05:48 PM liquibase.util
 INFO: Filtered out:                 0
-Jul 31, 2025 4:28:45 PM liquibase.util
+Aug 03, 2025 2:05:48 PM liquibase.util
 INFO: -------------------------------
-Jul 31, 2025 4:28:45 PM liquibase.util
+Aug 03, 2025 2:05:48 PM liquibase.util
 INFO: Total change sets:            4
-Jul 31, 2025 4:28:45 PM liquibase.util
+Aug 03, 2025 2:05:48 PM liquibase.util
 INFO: Update summary generated
-Jul 31, 2025 4:28:45 PM liquibase.command
-INFO: Update command completed successfully.
-Liquibase: Update has been successful. Rows affected: 0
-Jul 31, 2025 4:28:45 PM liquibase.lockservice
-INFO: Successfully released change log lock
-Jul 31, 2025 4:28:45 PM liquibase.command
+Aug 03, 2025 2:05:48 PM liquibase.command
 INFO: Command execution complete

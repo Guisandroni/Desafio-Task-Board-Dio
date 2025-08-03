@@ -1,5 +1,6 @@
 package org.dev.gui;
 
+import org.dev.gui.gui.MainMenu;
 import org.dev.gui.persistence.migration.MigrationStrategy;
 
 import java.sql.Connection;
@@ -15,5 +16,6 @@ public class Main {
         try(Connection connection = getConnection()){
             new MigrationStrategy(connection).executeMigration();
         }
+        new MainMenu().execute();
     }
 }

@@ -4,7 +4,7 @@ import lombok.Data;
 
 import java.time.OffsetDateTime;
 
-
+// entidades: tabelas do bd
 @Data
 public class BlockEntity {
 
