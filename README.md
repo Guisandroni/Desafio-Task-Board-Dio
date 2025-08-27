@@ -1,33 +1,71 @@
-
-# Desafio-Task-Board-Dio
+# TaskBoard
 
 \<div align="center"\>
-\<img src="[https://img.shields.io/badge/Status-Concluído-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Conclu%C3%ADdo-green)" alt="Status do Projeto"\>
-\<img src="[https://img.shields.io/badge/Tecnologias-Java](https://www.google.com/search?q=https://img.shields.io/badge/Tecnologias-Java) | Spring Boot | MySQL-blue" alt="Tecnologias"\>
+\<img src="[https://img.shields.io/badge/Status-Estável-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%C3%A1vel-green)" alt="Status do Projeto"\>
+\<img src="[https://img.shields.io/badge/Linguagem-Java](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java) 17+-blue" alt="Linguagem Java"\>
+\<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://www.google.com/search?q=https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
+\<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL) 8.0-orange" alt="Banco de Dados MySQL"\>
 \</div\>
 
-## Sobre o Projeto
+-----
 
-Este é o projeto **Task Board** desenvolvido como parte do desafio de projeto da **DIO (Digital Innovation One)**. A aplicação é um simples quadro de tarefas (estilo Kanban) que permite a criação, visualização, edição e exclusão de tarefas. O projeto utiliza **Java** e **Spring Boot** para o backend, e um banco de dados **MySQL** para persistir as informações das tarefas.
+## 🎯 Visão Geral
 
-## Funcionalidades
+O **TaskBoard** é uma aplicação desktop robusta desenvolvida em **Java** que oferece um sistema completo de gerenciamento de tarefas no estilo **Kanban**. Inspirado no Trello, o sistema permite criar múltiplos boards personalizáveis, gerenciar cards através de colunas organizadas e monitorar o progresso com um sistema de logs otimizado.
 
-  * **Listagem de Tarefas:** Visualize todas as tarefas em colunas (A Fazer, Em Andamento, Concluído).
-  * **Criação de Tarefas:** Adicione novas tarefas com título, descrição e status.
-  * **Edição de Tarefas:** Altere o título, a descrição e o status de uma tarefa existente.
-  * **Exclusão de Tarefas:** Remova tarefas que não são mais necessárias.
-  * **Conexão com MySQL:** Todas as informações são salvas e recuperadas de um banco de dados relacional.
+-----
 
-## Tecnologias Utilizadas
+## ✨ Principais Funcionalidades
 
-  * **Backend:**
-      * **Java:** Linguagem de programação.
-      * **Spring Boot:** Framework para criação de aplicações Java robustas.
-      * **Maven:** Ferramenta para gerenciamento de dependências e construção do projeto.
-  * **Banco de Dados:**
-      * **MySQL:** Sistema de gerenciamento de banco de dados relacional.
-      * **JPA (Java Persistence API) / Hibernate:** Para mapeamento objeto-relacional.
-  * **Outras Ferramentas:**
-      * **Lombok:** Para reduzir o código boilerplate (getters, setters, etc.).
-      * **Thymeleaf:** Motor de template para a renderização das páginas HTML.
+  * **🗂️ Múltiplos Boards:** Crie e gerencie vários boards simultaneamente.
+  * **📋 Sistema Kanban Completo:** Interface visual com colunas personalizáveis.
+  * **🔄 Fluxo de Trabalho Controlado:** Movimentação sequencial de cards entre colunas.
+  * **🚫 Sistema de Bloqueio Avançado:** Bloqueie e desbloqueie cards com justificativas via interface.
+  * **📊 Sistema de Logs Otimizado:** Logs essenciais para produção.
+  * **💾 Persistência MySQL:** Dados seguros em um banco de dados robusto.
+
+
+## 🚀 Tecnologias e Arquitetura
+
+### Stack Tecnológico
+
+  * **Java 17+:** Linguagem principal com recursos modernos.
+  * **Swing:** Interface gráfica nativa otimizada.
+  * **MySQL 8.0:** Banco de dados robusto e confiável.
+  * **JDBC:** Conectividade otimizada com o banco de dados.
+
+### Arquitetura e Padrões de Design
+
+  * **MVC Pattern:** Separação clara de responsabilidades entre Model, View e Controller.
+  * **DAO Pattern:** Camada de acesso a dados isolada.
+  * **Service Layer:** Lógica de negócio centralizada.
+  * **Singleton:** Sistema de logs unificado e otimizado.
+
+
+## ⚙️ Configuração e Instalação
+
+### Pré-requisitos
+
+  * **☕ Java 17** ou superior.
+  * **🗄️ MySQL Server 8.0+**.
+  * **🖥️ Sistema Operacional:** Windows, Linux ou macOS.
+
+
+### 🎮 Menu Principal
+
+O sistema inicia com um menu principal que oferece:
+
+  * **📋 Criar Novo Board:** Cria um board personalizado.
+  * **🎯 Selecionar Board:** Abre um board existente.
+  * **🗑️ Excluir Board:** Remove um board (com confirmação).
+  * **📊 Visualizar Logs:** Acesso ao sistema de monitoramento em tempo real.
+  * **🚪 Sair:** Encerra a aplicação.
+
+### 📋 Gerenciamento de Cards
+
+  * **➕ Criar Card:** Título, descrição e coluna inicial.
+  * **⬅️➡️ Mover Card:** Movimente entre colunas seguindo o fluxo.
+  * **🚫 Bloquear/Desbloquear:** Com justificativas obrigatórias via menu de contexto.
+  * **❌ Cancelar Card:** Move o card diretamente para a coluna "Cancelado".
+  * **✏️ Editar Informações:** Atualize os dados do card.
 
