@@ -1,11 +1,12 @@
+
 # TaskBoard
 
-<div align="center"\>
-<img src="[https://img.shields.io/badge/Status-Estável-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%C3%A1vel-green)" alt="Status do Projeto"\>
-<img src="[https://img.shields.io/badge/Linguagem-Java](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java) 17+-blue" alt="Linguagem Java"\>
-<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://www.google.com/search?q=https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
-<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL) 8.0-orange" alt="Banco de Dados MySQL"\>
-</div\>
+\<div align="center"\>
+\<img src="[https://img.shields.io/badge/Status-Est%C3%A1vel-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%25C3%25A1vel-green)" alt="Status do Projeto"\>
+\<img src="[https://img.shields.io/badge/Linguagem-Java\_17+-blue](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java_17%2B-blue)" alt="Linguagem Java"\>
+\<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
+\<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL\_8.0-orange](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL_8.0-orange)" alt="Banco de Dados MySQL"\>
+\</div\>
 
 -----
 
@@ -24,6 +25,7 @@ O **TaskBoard** é uma aplicação desktop robusta desenvolvida em **Java** que 
   * **📊 Sistema de Logs Otimizado:** Logs essenciais para produção.
   * **💾 Persistência MySQL:** Dados seguros em um banco de dados robusto.
 
+-----
 
 ## 🚀 Tecnologias e Arquitetura
 
@@ -41,6 +43,9 @@ O **TaskBoard** é uma aplicação desktop robusta desenvolvida em **Java** que 
   * **Service Layer:** Lógica de negócio centralizada.
   * **Singleton:** Sistema de logs unificado e otimizado.
 
+-----
+
+## ⚙️ Configuração e Instalação
 
 ### Pré-requisitos
 
@@ -48,6 +53,34 @@ O **TaskBoard** é uma aplicação desktop robusta desenvolvida em **Java** que 
   * **🗄️ MySQL Server 8.0+**.
   * **🖥️ Sistema Operacional:** Windows, Linux ou macOS.
 
+### Configuração do Banco de Dados
+
+O sistema cria o banco de dados e as tabelas automaticamente na primeira execução. Certifique-se de que o MySQL Server está em execução.
+
+### Execução
+
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone [URL_DO_SEU_REPOSITORIO]
+    cd TaskBoard
+    ```
+
+2.  **Compile o projeto:**
+
+    ```bash
+    javac -cp "lib/mysql-connector-j-8.0.33.jar;." -d bin src/main/**/*.java
+    ```
+
+3.  **Execute a aplicação:**
+
+    ```bash
+    java -cp "lib/mysql-connector-j-8.0.33.jar;bin" main.Main
+    ```
+
+-----
+
+## 📖 Guia de Uso
 
 ### 🎮 Menu Principal
 
