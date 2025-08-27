@@ -1,12 +1,12 @@
 
 # TaskBoard
 
-\<div align="center"\>
-\<img src="[https://img.shields.io/badge/Status-Est%C3%A1vel-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%25C3%25A1vel-green)" alt="Status do Projeto"\>
-\<img src="[https://img.shields.io/badge/Linguagem-Java\_17+-blue](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java_17%2B-blue)" alt="Linguagem Java"\>
-\<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
-\<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL\_8.0-orange](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL_8.0-orange)" alt="Banco de Dados MySQL"\>
-\</div\>
+<div align="center"\>
+<img src="[https://img.shields.io/badge/Status-Est%C3%A1vel-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%25C3%25A1vel-green)" alt="Status do Projeto"\>
+<img src="[https://img.shields.io/badge/Linguagem-Java\_17+-blue](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java_17%2B-blue)" alt="Linguagem Java"\>
+<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
+<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL\_8.0-orange](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL_8.0-orange)" alt="Banco de Dados MySQL"\>
+</div\>
 
 -----
 
@@ -57,27 +57,25 @@ O **TaskBoard** é uma aplicação desktop robusta desenvolvida em **Java** que 
 
 O sistema cria o banco de dados e as tabelas automaticamente na primeira execução. Certifique-se de que o MySQL Server está em execução.
 
+-----
+
 ### Execução
 
 1.  **Clone o repositório:**
-
     ```bash
     git clone [URL_DO_SEU_REPOSITORIO]
     cd TaskBoard
     ```
-
-2.  **Compile o projeto:**
-
+2.  **Configure o Banco de Dados:**
+    Antes de rodar a aplicação, abra o arquivo **`DatabaseConnection.java`** e edite as informações de conexão para corresponderem às suas credenciais do **MySQL** (usuário, senha, etc.).
+3.  **Compile o projeto:**
     ```bash
     javac -cp "lib/mysql-connector-j-8.0.33.jar;." -d bin src/main/**/*.java
     ```
-
-3.  **Execute a aplicação:**
-
+4.  **Execute a aplicação:**
     ```bash
     java -cp "lib/mysql-connector-j-8.0.33.jar;bin" main.Main
     ```
-
 -----
 
 ## 📖 Guia de Uso
