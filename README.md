@@ -42,8 +42,6 @@ O **TaskBoard** é uma aplicação desktop robusta desenvolvida em **Java** que 
   * **Singleton:** Sistema de logs unificado e otimizado.
 
 
-## ⚙️ Configuração e Instalação
-
 ### Pré-requisitos
 
   * **☕ Java 17** ou superior.
