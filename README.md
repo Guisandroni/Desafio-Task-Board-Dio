@@ -1,11 +1,11 @@
 # TaskBoard
 
-\<div align="center"\>
-\<img src="[https://img.shields.io/badge/Status-Estável-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%C3%A1vel-green)" alt="Status do Projeto"\>
-\<img src="[https://img.shields.io/badge/Linguagem-Java](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java) 17+-blue" alt="Linguagem Java"\>
-\<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://www.google.com/search?q=https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
-\<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL) 8.0-orange" alt="Banco de Dados MySQL"\>
-\</div\>
+<div align="center"\>
+<img src="[https://img.shields.io/badge/Status-Estável-green](https://www.google.com/search?q=https://img.shields.io/badge/Status-Est%C3%A1vel-green)" alt="Status do Projeto"\>
+<img src="[https://img.shields.io/badge/Linguagem-Java](https://www.google.com/search?q=https://img.shields.io/badge/Linguagem-Java) 17+-blue" alt="Linguagem Java"\>
+<img src="[https://img.shields.io/badge/Interface-Swing-informational](https://www.google.com/search?q=https://img.shields.io/badge/Interface-Swing-informational)" alt="Interface Swing"\>
+<img src="[https://img.shields.io/badge/Banco\_de\_Dados-MySQL](https://www.google.com/search?q=https://img.shields.io/badge/Banco_de_Dados-MySQL) 8.0-orange" alt="Banco de Dados MySQL"\>
+</div\>
 
 -----
 
